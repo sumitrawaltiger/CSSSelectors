@@ -55,6 +55,23 @@
             margin: 10px;
             padding: 10px;
             border: 1px solid black;
+           
+        }
+        /* Grouping Selector */
+        div, span#idSelector, span.classSelector, a[href="https://www.google.com"] {
+            border-radius: 10px;
+            display: inline-block;
+
+        }
+        /* Pseudo-class Selector */
+        a:hover {
+            background-color: yellow;
+            color: red;
+        }
+        h1::after {
+            content: url("https://i.pinimg.com/originals/a8/50/2c/a8502cb158d5eac79b7902fdc76074e6.gif");
+            color: gray;
+            font-size: 14px;
         }
     </style>
 </head>
@@ -63,5 +80,6 @@
     <span id="idSelector">CSS ID Selector</span>
     <span class="classSelector">CSS Class Selector</span>
     <a href="https://www.google.com">CSS Attribute Selector</a>
+    <h1>CSS Universal Selector</h1>
 </body>
 </html>
